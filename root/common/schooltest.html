@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Тест</title>
+    <link rel="stylesheet" href="../../root/css/index.css">
+    <script src="../../root/js/script.js"></script>
+</head>
+<body>
+<div class="main-container">
+    <header class="header">
+        <h1 class="h1_name">МБОУ "Гимназия № 42"</h1>
+        <nav class="nav_header">
+            <button  onclick="document.location='../index.html'">
+                Главная
+            </button>
+            <button onclick="document.location='myclass.html'">
+                Мой класс
+            </button>
+            <button onclick="document.location='favoriteobject.html'">
+                Любимый предмет
+            </button>
+            <button  style="background: #7cbfe1;" onclick="document.location='schooltest.html'">
+                Тест
+            </button>
+            <button onclick="document.location='myinformation.html'">
+                Обо мне
+            </button>
+            <button onclick="document.location='../it_files/gallary.html'">
+                Галлерея
+            </button>
+
+
+        </nav>
+    </header>
+
+    <main class="main_body_container">
+        <h1 id='test_h1'>Пройдите тест</h1>
+        <div class="div_jstest">
+            <h2 class="p_jstest" id='quest'>132</h2>
+
+            <div class="div_div_answer_buttons">
+                <div class="div_answer_buttons" id='divasd'>
+                    <ol id='quest_ol'>
+
+                    </ol>
+                    <button class="btn_answer" id='btn_answer1'>1</button>
+                    <button class="btn_answer" id='btn_answer2'>2</button>
+                    <button class="btn_answer" id='btn_answer3'>3</button>
+                    <button class="btn_answer" id='btn_answer4'>4</button>
+
+                </div>
+                <button class="btn_reload" id='btn_reload' onclick="location.reload()">Перепройти тест</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 МБОУ "Гимназия № 42". Все права защищены.</p>
+    </footer>
+</div>
+
+<script>
+
+    window.onload = function () {
+        jstest()
+    }
+</script>
+
+</body>
+</html>
